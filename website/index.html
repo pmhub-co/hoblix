@@ -45,7 +45,9 @@
         margin-top: -24px;
     }
     .header-area {
-        background: url(./images/header-bg-1.jpg) no-repeat scroll right bottom / 100% auto;
+        background: url(./images/background.png) no-repeat scroll right bottom / 100% auto;
+        background-position: center;
+        margin-top: 70px;
     }
     .mainmenu-area ul.nav.navbar-nav > li.active > a, .mainmenu-area ul.nav.navbar-nav > li > a:hover {
         color: #22233b;
@@ -76,7 +78,7 @@
         color: #ffffff;
     }
     .ml-3{
-        margin-left: 2%;
+        margin-left: 10px;
     }
     .subscribe .control {
         border: 1px solid #22233b;
@@ -146,7 +148,10 @@
     .banner-text{
         font-size: initial;
         display: block;
-    word-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .height-300-px{
+        height: 300px;
     }
     </style>
 </head>
@@ -165,7 +170,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- <a class="navbar-brand" href="#"><img src="http://quomodosoft.com/html/lunatic/lunatic/images/logo.png" alt=""></a> -->
                 <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png" alt=""></a>
             </div>
             <div class="collapse navbar-collapse" id="mainmenu">
@@ -174,11 +178,11 @@
                 </div> -->
                 <ul class="nav navbar-nav navbar-left ml-18">
                     <li class="active"><a href="#home-page">Home</a></li>
-                    <li><a href="#about-page">About</a></li>
-                    <li><a href="#feature-page">Features</a></li>
-                    <li><a href="#gallery-page">Gallery</a></li>
-                    <li><a href="#price-page">Pricing</a></li>
-                    <li><a href="#team-page">Team</a></li>
+                    <li><a href="#about-page">How it works</a></li>
+                    <li><a href="#feature-page">Activities</a></li>
+                    <!-- <li><a href="#gallery-page">Gallery</a></li> -->
+                    <!-- <li><a href="#price-page">Membership</a></li> -->
+                    <li><a href="#partner-with-us">Partner With Us</a></li>
                     <li><a href="#blog-page">Blog</a></li>
                     <li><a href="#contact-page">Contact</a></li>
                 </ul>
@@ -216,7 +220,13 @@
                         <div class="space-30 hidden-xs"></div>
                         <div class="space-30"></div>
                         <h3 class="wow fadeInUp" data-wow-delay="0.4s">We're Launching Soon</h3>
-                        <button class="bttn-default bttn-lg" type="submit">Get Started</button>
+                        <a class="bttn-default bttn-lg" href="https://chat.whatsapp.com/DSpCNs4znuWKMHGt62qL5L" target="_blank">
+                            <!-- <button class="bttn-default bttn-lg" type="button"> -->
+                                Join us on WhatsApp
+                                <!-- <span class="ml-3"></span>  -->
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            <!-- </button> -->
+                        </a>
                         <div class="space-20"></div>
                         <p class="wow fadeInUp">Sign Up to our Early Access Users List.<br><strong>Coming Soon On:</strong> Android, iOS</p>
                     </div>
@@ -512,7 +522,7 @@
     </section> -->
     <!-- Gallery-Area / -->
     <!-- Price-Area -->
-    <section class="price-area section-pd-top-2" id="price-page">
+    <!-- <section class="price-area section-pd-top-2" id="price-page">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
@@ -574,7 +584,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Price-Area / -->
     <!-- Team-Area -->
     <!-- <section id="team-page" class="section-pd-top-2">
@@ -713,7 +723,7 @@
     </section>
     <!-- FAQ-Area / -->
     <!-- Download-Area -->
-    <section class="download-area section-padding">
+    <section class="download-area section-padding" id="partner-with-us">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-lg-6 pull-right section-padding">
@@ -779,12 +789,12 @@
                 <div class="col-xs-12 col-sm-4">
                     <article class="blog-single wow fadeInUp" data-wow-delay="0.3s">
                         <div class="blog-photo">
-                            <img src="http://quomodosoft.com/html/lunatic/lunatic/images/blog-1.jpg" alt="">
+                            <img class="height-300-px" src="./images/blog-1.jpeg" alt="">
                         </div>
                         <div class="blog-content">
-                            <h5 class="title"><a href="#">Blazeon Scrambles to Police Content Amid Rapid Growth</a></h5>
+                            <h5 class="title"><a href="https://medium.com/@emiliabunea/why-global-managers-need-passionate-hobbies-7d546db539fc?source=search_post" target="_blank">Why global managers need passionate hobbies</a></h5>
                             <ul class="blog-meta">
-                                <li><i class="zmdi zmdi-time"></i> January 12th, 2018</li>
+                                <li><i class="zmdi zmdi-time"></i> February 01st, 2020</li>
                             </ul>
                         </div>
                     </article>
@@ -792,13 +802,12 @@
                 <div class="col-xs-12 col-sm-4">
                     <article class="blog-single wow fadeInUp" data-wow-delay="0.6s">
                         <div class="blog-photo">
-                            <img src="http://quomodosoft.com/html/lunatic/lunatic/images/blog-2.jpg" alt="">
+                            <img class="height-300-px" src="./images/blog-2.jpeg" alt="">
                         </div>
                         <div class="blog-content">
-                            <h5 class="title"><a href="#">Patturb and Waymo Duel at Key 
-Hearing Over Driverless Car.</a></h5>
+                            <h5 class="title"><a href="https://medium.com/the-mission/these-5-hobbies-will-make-you-smarter-e353b8a47e88" target="_blank">Why We Should Stop Turning Hobbies into Jobs.</a></h5>
                             <ul class="blog-meta">
-                                <li><i class="zmdi zmdi-time"></i> January 13th, 2018</li>
+                                <li><i class="zmdi zmdi-time"></i> February 1, 2020</li>
                             </ul>
                         </div>
                     </article>
@@ -806,13 +815,12 @@ Hearing Over Driverless Car.</a></h5>
                 <div class="col-xs-12 col-sm-4">
                     <article class="blog-single wow fadeInUp" data-wow-delay="0.9s">
                         <div class="blog-photo">
-                            <img src="http://quomodosoft.com/html/lunatic/lunatic/images/blog-3.jpg" alt="">
+                            <img class="height-300-px" src="./images/blog-3.jpeg" alt="">
                         </div>
                         <div class="blog-content">
-                            <h5 class="title"><a href="#">Updating Stored Credit Card 
-Information for the App Store</a></h5>
+                            <h5 class="title"><a href="https://medium.com/human-output/why-you-should-form-hobbies-over-habits-cec4b7de1716" target="_blank">Why You Should Form Hobbies Over Habits.</a></h5>
                             <ul class="blog-meta">
-                                <li><i class="zmdi zmdi-time"></i> January 15th, 2018</li>
+                                <li><i class="zmdi zmdi-time"></i> February 1, 2020</li>
                             </ul>
                         </div>
                     </article>
