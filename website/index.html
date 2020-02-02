@@ -13,7 +13,7 @@
     <title>Hoblix - Explore your hobbies</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="http://quomodosoft.com/html/lunatic/lunatic/images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="http://quomodosoft.com/html/lunatic/lunatic/image/ico" href="http://quomodosoft.com/html/lunatic/lunatic/images/favicon.ico" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="http://quomodosoft.com/html/lunatic/lunatic/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://quomodosoft.com/html/lunatic/lunatic/css/owl.carousel.min.css">
@@ -76,7 +76,77 @@
         color: #ffffff;
     }
     .ml-3{
-        margin-left: 3%;
+        margin-left: 2%;
+    }
+    .subscribe .control {
+        border: 1px solid #22233b;
+        border-radius: 10px;
+    }
+    .subscribe .sub-button {
+        border-radius: 0 10px 10px 0;
+        background-color: #22233b;
+    }
+    .banner-body {
+        color: #ffffff;
+        text-align: center;
+    }
+    .banner-color {
+        background-color: #22233b;
+        color: #ffffff;
+    }
+    .anim--slideInDown {
+        animation-duration: .3s;
+        animation-name: slideInDown;
+    }
+    .anim {
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-delay: 0;
+    }
+    #scrollUp {
+        background-color: #22233b;
+        color: #ffffff;
+    }
+    .play-bttn {
+        background-color: #22233b;
+        -webkit-box-shadow: 0 0 0 0 #22233b;
+        box-shadow: 0 0 0 0 #22233b;
+    }
+    .play-bttn:hover {
+        color: #22233b;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0 0 50px -10px #22233b;
+        box-shadow: 0 0 50px -10px #22233b;
+    }
+    .close-banner {
+        background: none;
+        border: none;
+        position: absolute;
+        right: -2px;
+        padding: 11px;
+        color: #ffff;
+        z-index: 1;
+    }
+    .banner-color {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-family: norms,sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #333;
+        color: #fff;
+        font-weight: 500;
+        min-height: 48px;
+        padding: 8px 40px;
+        position: relative;
+        text-align: center;
+    }
+    .banner-text{
+        font-size: initial;
+        display: block;
+    word-wrap: break-word;
     }
     </style>
 </head>
@@ -115,6 +185,22 @@
 
             </div>
         </div>
+        <section class="header-banner">
+            <button class="close-banner" id="closeBanner">
+                <span class="isvg loaded svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12 10.59L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L10.59 12L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L12 13.41L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L13.41 12L18.295 7.115Z" fill="currentColor"></path>
+                    </svg>
+                </span>
+            </button>
+            <div class="banner-body">
+                <a href="https://chat.whatsapp.com/DSpCNs4znuWKMHGt62qL5L" target="_blank">
+                    <div class="banner-color anim anim--slideInDown">
+                        <span class="banner-text">Get exclusive and faster exprience updates, join our community on WhatsApp.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
     </nav>
     <!-- Main-Menu-Area / -->
     <!-- header-Area -->
@@ -187,7 +273,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
                     <div class="video-box wow fadeIn" data-wow-delay="0.3s">
-                        <a href="https://www.youtube.com/watch?v=8BAhwgjMvnM" class="play-bttn popup">
+                        <a href="https://www.youtube.com/embed?v=typffzFNbAM" class="play-bttn popup">
                             <i class="zmdi zmdi-play"></i>
                         </a>
                         <figure class="video-photo">
@@ -774,7 +860,7 @@ Information for the App Store</a></h5>
                     <!-- <img src="http://quomodosoft.com/html/lunatic/lunatic/images/logo.png" alt=""> -->
                     <img class="logo" src="./images/logo.png" alt="">
                     <div class="space-20"></div>
-                    <p>Even when carefully kept, paper journals can be read by anyone who happens.</p>
+                    <p>Enjoy hobbies on the go</p>
                     <div class="space-20"></div>
                     <ul class="social-menu">
                         <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
@@ -783,7 +869,7 @@ Information for the App Store</a></h5>
                         <li><a href="#"><i class="zmdi zmdi-youtube-play"></i></a></li>
                     </ul>
                     <div class="space-20"></div>
-                    <p>Copyright Hoblix Inc. 2020</p>
+                    <p>Copyright Hoblix Pvt. Ltd. 2020</p>
                     <div class="space-50"></div>
                 </div>
                 <div class="col-xs-12 col-sm-2">
@@ -795,7 +881,7 @@ Information for the App Store</a></h5>
                         <li><a href="#">Career</a></li>
                         <li><a href="#">Reviews</a></li> -->
                         <li><a href="#">Terms &amp; Conditions</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                     <div class="space-50"></div>
                 </div>
@@ -803,23 +889,23 @@ Information for the App Store</a></h5>
                     <h4>Contact</h4>
                     <div class="space-10"></div>
                     <ul class="icon-list">
-                        <li>
+                        <!-- <li>
                             <div class="icon">
                                 <i class="zmdi zmdi-pin zmdi-hc-fw"></i>
                             </div>
                             <strong>Location</strong> : 1033 Valley Drive , Warminster , PA, USA
-                        </li>
+                        </li> -->
                         <li>
                             <div class="icon">
                                 <i class="zmdi zmdi-email"></i>
                             </div>
-                            <strong>Mail</strong> : Info@lunatic.co
+                            <strong>Mail</strong> : hello@hoblix.com
                         </li>
                         <li>
                             <div class="icon">
                                 <i class="zmdi zmdi-phone-in-talk"></i>
                             </div>
-                            <strong>Phone</strong> : +5569 187 9852
+                            <strong>Phone</strong> : +91 9654677563
                         </li>
                     </ul>
                     <div class="space-50"></div>
@@ -858,6 +944,11 @@ Information for the App Store</a></h5>
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/maps.js"></script> -->
     <!--Main-active-JS-->
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/main.js"></script>
+    <script>
+        $('#closeBanner').on('click', function(){
+            $('.header-banner').hide(200)
+        })
+    </script>
 </body>
 
 </html>
