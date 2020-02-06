@@ -68,6 +68,9 @@
     .mleft-40{
         margin-left: 40%;
     }
+    .ml-33{
+        margin-left: 33%;
+    }
     .ml-18{
         margin-left: 18%;
     }
@@ -189,6 +192,15 @@
         color: black;
         text-decoration: underline !important;
     }
+    .form-iframe{
+        margin-left: 15%;
+    }
+    ul.nav.form-pack > li.form-active > a, ul.nav.navbar-nav > li > a:hover {
+        color: #22233b;
+        font-weight: bold;
+        text-decoration: underline;
+        background-color: #ffffff;
+    } 
     </style>
 </head>
 
@@ -888,19 +900,6 @@
                     </div>
                     <hr class="pLine">
                 </div>
-                <!-- <div class="col-xs-12 col-sm-4">
-                    <article class="blog-single wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="blog-photo">
-                            <img class="height-300-px" src="./images/blog-3.jpeg" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h5 class="title"><a href="https://medium.com/human-output/why-you-should-form-hobbies-over-habits-cec4b7de1716" target="_blank">Why You Should Form Hobbies Over Habits.</a></h5>
-                            <ul class="blog-meta">
-                                <li><i class="zmdi zmdi-time"></i> February 1, 2020</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div> -->
             </div>
         </div>
     </section>
@@ -911,12 +910,33 @@
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h3 class="page-title">Ask us any questions</h3>
-                    <div class="space-60"></div>
+                    <div class="space-10"></div>
+                    <!-- <div class="form-tab"> -->
+                        <ul class="nav navbar-nav navbar-left ml-33 form-pack">
+                            <li class="form-active"><a class="form-tab" href="#user-form">User</a></li>
+                            <li><a class="form-tab" href="#corporate-form">Corporate</a></li>
+                            <li><a class="form-tab" href="#business-form">Business</a></li>
+                            <li><a class="form-tab" href="#collaborator-form">Collaborator</a></li>
+                        </ul>
+                    <!-- </div> -->
+                    <div class="space-50"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <form action="process.php" id="contact-form" method="post">
+                    <div class="form-iframe" id="user-form"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxA64nBnlH6Hhav1H6wUuIAc527-gz4fjdpbTwd1VT8421tA/viewform?embedded=true" width="700" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                    <div class="form-iframe" id="corporate-form" style="display: none;"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI9YLtIRHVdGvvvrLE3ZL6XXu8PAjwRQqkHYjyHIinMKo49A/viewform?embedded=true" width="700" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                     <div class="form-iframe" id="business-form" style="display: none;"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkx6sjFM6Xj3IEQRjXK0jLT41nXj2tAMyn07T0YRrANysAAQ/viewform?embedded=true" width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                    <div class="form-iframe" id="collaborator-form" style="display: none;"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPQd4rZJtRzf-DHGbDKgJzbCC8ZpnSP3ICUiQj3pg737neow/viewform?embedded=true" width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                    <!-- <form action="process.php" id="contact-form" method="post">
                         <div class="form-double">
                             <div class="form_group">
                                 <input id="form-name" name="form-name" placeholder="Name" class="form_control" required="required">
@@ -930,7 +950,7 @@
                         <div class="text-center">
                             <button class="bttn-default bttn-lg" type="submit">Contact with us</button>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
@@ -1031,6 +1051,18 @@
     <script>
         $('#closeBanner').on('click', function(){
             $('.header-banner').hide(200)
+        })
+        $('.form-tab').on('click', function(event){
+            event.preventDefault()
+            var replace = $(".form-active a").attr("href")
+            var target  = $(this).attr('href')
+            if(target!=replace){
+                $( "li" ).removeClass("form-active")
+                $("a[href='" +target+ "']").parent().addClass("form-active")
+                event.preventDefault()
+                $(replace).hide()
+                $(target).show()
+            }
         })
     </script>
 </body>
