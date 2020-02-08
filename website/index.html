@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -67,9 +66,6 @@
     }
     .mleft-40{
         margin-left: 40%;
-    }
-    .ml-33{
-        margin-left: 33%;
     }
     .ml-18{
         margin-left: 18%;
@@ -192,9 +188,14 @@
         color: black;
         text-decoration: underline !important;
     }
-    .form-iframe{
-        margin-left: 15%;
+    @media screen and (min-width: 800px) {
+        .ml-33{
+            margin-left: 33%;
+        }
     }
+    /* .form-iframe{
+        margin-left: 14%;
+    } */
     ul.nav.form-pack > li.form-active > a, ul.nav.navbar-nav > li > a:hover {
         color: #22233b;
         font-weight: bold;
@@ -298,7 +299,6 @@
                 <div class="col-xs-12 text-center">
                     <h3 class="page-title">How It Works</h3>
                     <!-- <p class="wow fadeInUp" data-wow-delay="0.6s">Hoblix partners with 1000+ high-quality activity providers and educators. Whether you are looking to figure out how to spend your free time or get into mastering a specific activity, we will match you with specialized trainers who can customize each session to meet your hobby goals.
-
                     </p> -->
                     <!-- <div class="space-60"></div> -->
                 </div>
@@ -900,6 +900,19 @@
                     </div>
                     <hr class="pLine">
                 </div>
+                <!-- <div class="col-xs-12 col-sm-4">
+                    <article class="blog-single wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="blog-photo">
+                            <img class="height-300-px" src="./images/blog-3.jpeg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h5 class="title"><a href="https://medium.com/human-output/why-you-should-form-hobbies-over-habits-cec4b7de1716" target="_blank">Why You Should Form Hobbies Over Habits.</a></h5>
+                            <ul class="blog-meta">
+                                <li><i class="zmdi zmdi-time"></i> February 1, 2020</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div> -->
             </div>
         </div>
     </section>
@@ -911,48 +924,47 @@
                 <div class="col-xs-12 text-center">
                     <h3 class="page-title">Ask us any questions</h3>
                     <div class="space-10"></div>
-                    <!-- <div class="form-tab"> -->
-                        <ul class="nav navbar-nav navbar-left ml-33 form-pack">
-                            <li class="form-active"><a class="form-tab" href="#user-form">User</a></li>
-                            <li><a class="form-tab" href="#corporate-form">Corporate</a></li>
-                            <li><a class="form-tab" href="#business-form">Business</a></li>
-                            <li><a class="form-tab" href="#collaborator-form">Collaborator</a></li>
-                        </ul>
-                    <!-- </div> -->
+                    <ul class="nav navbar-nav ml-33 form-pack">
+                        <li class="form-active"><a class="form-tab" href="#user-form">User</a></li>
+                        <li><a class="form-tab" href="#corporate-form">Corporate</a></li>
+                        <li><a class="form-tab" href="#business-form">Business</a></li>
+                        <li><a class="form-tab" href="#collaborator-form">Collaborator</a></li>
+                    </ul>
                     <div class="space-50"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
                     <div class="form-iframe" id="user-form"> 
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxA64nBnlH6Hhav1H6wUuIAc527-gz4fjdpbTwd1VT8421tA/viewform?embedded=true" width="700" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxA64nBnlH6Hhav1H6wUuIAc527-gz4fjdpbTwd1VT8421tA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+                <div class="form-iframe" id="corporate-form" style="display: none;"> 
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI9YLtIRHVdGvvvrLE3ZL6XXu8PAjwRQqkHYjyHIinMKo49A/viewform?embedded=true" width="700" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <div class="form-iframe" id="business-form" style="display: none;"> 
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkx6sjFM6Xj3IEQRjXK0jLT41nXj2tAMyn07T0YRrANysAAQ/viewform?embedded=true" width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <div class="form-iframe" id="collaborator-form" style="display: none;"> 
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPQd4rZJtRzf-DHGbDKgJzbCC8ZpnSP3ICUiQj3pg737neow/viewform?embedded=true" width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="form-iframe" id="user-form"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxA64nBnlH6Hhav1H6wUuIAc527-gz4fjdpbTwd1VT8421tA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
                     <div class="form-iframe" id="corporate-form" style="display: none;"> 
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI9YLtIRHVdGvvvrLE3ZL6XXu8PAjwRQqkHYjyHIinMKo49A/viewform?embedded=true" width="700" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
                      <div class="form-iframe" id="business-form" style="display: none;"> 
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkx6sjFM6Xj3IEQRjXK0jLT41nXj2tAMyn07T0YRrANysAAQ/viewform?embedded=true" width="700" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkx6sjFM6Xj3IEQRjXK0jLT41nXj2tAMyn07T0YRrANysAAQ/viewform?embedded=true" width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
                     <div class="form-iframe" id="collaborator-form" style="display: none;"> 
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPQd4rZJtRzf-DHGbDKgJzbCC8ZpnSP3ICUiQj3pg737neow/viewform?embedded=true" width="700" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPQd4rZJtRzf-DHGbDKgJzbCC8ZpnSP3ICUiQj3pg737neow/viewform?embedded=true" width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
-                    <!-- <form action="process.php" id="contact-form" method="post">
-                        <div class="form-double">
-                            <div class="form_group">
-                                <input id="form-name" name="form-name" placeholder="Name" class="form_control" required="required">
-                            </div>
-                            <div class="form_group last">
-                                <input type="email" id="form-email" name="form-email" placeholder="Email" required="required" class="form_control">
-                            </div>
-                        </div>
-                        <input type="text" id="form-subject" name="form-subject" placeholder="Subject" class="form_control">
-                        <textarea class="form_control" id="form-message" name="form-message" rows="5" placeholder="Messages" required="required"></textarea>
-                        <div class="text-center">
-                            <button class="bttn-default bttn-lg" type="submit">Contact with us</button>
-                        </div>
-                    </form> -->
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- Contact-Form / -->
