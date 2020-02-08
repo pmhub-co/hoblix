@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="http://quomodosoft.com/html/lunatic/lunatic/style.css">
     <link rel="stylesheet" href="http://quomodosoft.com/html/lunatic/lunatic/css/responsive.css">
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/vendor/modernizr-2.8.3.min.js"></script>
+
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -1009,11 +1010,12 @@
                     <p>Don’t Worry We Won’t Spam in your inbox</p>
                     <div class="space-20"></div>
                     <form id="mc-form" class="subscribe">
-                        <input type="text" class="control" placeholder="Email" id="mc-email">
+                        <input type="text" class="control" placeholder="Email" id="mc-email" name="entry.1296982249">
                         <button class="sub-button" type="submit"><i class="zmdi zmdi-long-arrow-right"></i></button>
                         <label class="mt10" for="mc-email"></label>
                     </form>
-                    <div class="space-50"></div>
+                    <div class="space-5"></div>
+                    <p id='mc-message'></p>
                 </div>
             </div>
         </div>
@@ -1021,6 +1023,7 @@
     <!-- Footer-Area / -->
     <!--Vendor-JS-->
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/owl.carousel.min.js"></script>
@@ -1053,6 +1056,42 @@
                 $(target).show()
             }
         })
+        $('.sub-button').on('click', function(){
+            data = $('#mc-form').serializeArray()[0]
+            name = data.name
+            value = data.value
+            if(value){
+                if(isEmail(value)){
+                    $.ajax({
+                        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzE8XlGAPtb38Qobm8lJTHAt2RZ2vgfiNAGilecPGMwVfBNA/formResponse",
+                        data: {'entry.1296982249': value},
+                        type: "POST",
+                        dataType: "xml",
+                        success: function(d)
+					    {
+                            console.log(d)
+                            $('#mc-message').css("color","#21233A")
+                            $('#mc-message').text('Thank you for filling out your information!');
+					    },
+					    error: function(x, y, z){
+                            $('#mc-message').css("color","#DD0F44")
+                            $('#mc-message').text('Enter valid E-mail ID.');
+							
+						}
+                    })
+                }else{
+                    $('#mc-message').css("color","#DD0F44")
+                    $('#mc-message').text('Enter valid E-mail ID.');
+                }
+            }else{
+                $('#mc-message').css("color","#DD0F44")
+                $('#mc-message').text('Enter valid E-mail ID.');
+            }
+        })
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
     </script>
 </body>
 
