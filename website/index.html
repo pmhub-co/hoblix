@@ -1069,13 +1069,12 @@
                         dataType: "xml",
                         success: function(d)
 					    {
-                            console.log(d)
                             $('#mc-message').css("color","#21233A")
                             $('#mc-message').text('Thank you for filling out your information!');
 					    },
 					    error: function(x, y, z){
-                            $('#mc-message').css("color","#DD0F44")
-                            $('#mc-message').text('Enter valid E-mail ID.');
+                            $('#mc-message').css("color","#21233A")
+                            $('#mc-message').text('Thank you for filling out your information!');
 							
 						}
                     })
