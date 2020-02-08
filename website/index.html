@@ -805,30 +805,11 @@
                     <h3 class="page-title wow fadeInUp" data-wow-delay="0.3s">Partner With Us at No Cost</h3>
                     <p class=" wow fadeInUp" data-wow-delay="0.5s">Join for free and we'll work  with you to set revenue-maximizing rates for open spot and appointments. Then you get paid for every reservation we send you.</p>
                     <div class="space-30"></div>
-                    <button class="bttn-default bttn-lg" type="button">
+                    <a class="bttn-default bttn-lg form-tab" id="partner-btn" href="#business-form">
                         Reach out
                         <span class="ml-3"></span> 
                         <i class="zmdi zmdi-long-arrow-right"></i>
-                    </button>
-                    <!-- <a href="#" class="bttn-icon red-hover wow fadeIn" data-wow-delay="0.7s">
-                        <span class="bttn-content">
-                            <span class="icon">
-                               <img src="http://quomodosoft.com/html/lunatic/lunatic/images/app-store.png" alt="">
-                            </span>
-                            <small>Get It From </small>
-                            <strong>Appstore</strong>
-                        </span>
                     </a>
-                    <div class="space-30 hidden visible-xs"></div>
-                    <a href="#" class="bttn-icon red-hover wow fadeIn" data-wow-delay="0.9s">
-                        <span class="bttn-content">
-                            <span class="icon">
-                                <img src="http://quomodosoft.com/html/lunatic/lunatic/images/play-store.png" alt="">
-                            </span>
-                            <small>Get It From </small>
-                            <strong>Appstore</strong>
-                        </span>
-                    </a> -->
                 </div>
             </div>
         </div>
@@ -1023,7 +1004,6 @@
     <!-- Footer-Area / -->
     <!--Vendor-JS-->
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
     <script src="http://quomodosoft.com/html/lunatic/lunatic/js/owl.carousel.min.js"></script>
@@ -1043,6 +1023,14 @@
     <script>
         $('#closeBanner').on('click', function(){
             $('.header-banner').hide(200)
+        })
+        $('#partner-btn').on('click', function(event){
+            hash = "#business-form"
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
         })
         $('.form-tab').on('click', function(event){
             event.preventDefault()
