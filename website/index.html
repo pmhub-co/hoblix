@@ -1070,11 +1070,13 @@
                         success: function(d)
 					    {
                             $('#mc-message').css("color","#21233A")
-                            $('#mc-message').text('Thank you for filling out your information!');
+                            $('#mc-message').text('Thank you for filling out your information!')
+                            $('#mc-email').val('')
 					    },
 					    error: function(x, y, z){
                             $('#mc-message').css("color","#21233A")
-                            $('#mc-message').text('Thank you for filling out your information!');
+                            $('#mc-message').text('Thank you for filling out your information!')
+                            $('#mc-email').val('')
 							
 						}
                     })
