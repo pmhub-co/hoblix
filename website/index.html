@@ -220,8 +220,7 @@
 
 <body data-spy="scroll" data-target=".mainmenu-area">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRFVW26"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRFVW26" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Preloader-content -->
     <div class="preloade">
@@ -818,11 +817,16 @@
                     <h3 class="page-title wow fadeInUp" data-wow-delay="0.3s">Partner With Us at No Cost</h3>
                     <p class=" wow fadeInUp" data-wow-delay="0.5s">Join for free and we'll work  with you to set revenue-maximizing rates for open spot and appointments. Then you get paid for every reservation we send you.</p>
                     <div class="space-30"></div>
-                    <a class="bttn-default bttn-lg form-tab" id="partner-btn" href="#business-form">
+                    <!-- <a class="bttn-default bttn-lg" id="partner-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfpG3aH9A-OOGbfaulsnSbe8fWcsChWpfP6sXu7L5Y_NMCFwA/viewform" target="_blank">
                         Reach out
                         <span class="ml-3"></span> 
                         <i class="zmdi zmdi-long-arrow-right"></i>
-                    </a>
+                    </a> -->
+                    <button class="bttn-default bttn-lg" id="partner-btn">
+                        Reach out
+                        <span class="ml-3"></span> 
+                        <i class="zmdi zmdi-long-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -897,9 +901,9 @@
                     <h3 class="page-title">Ask us any questions</h3>
                     <div class="space-10"></div>
                     <ul class="nav navbar-nav ml-33 form-pack">
-                        <li class="form-active"><a class="form-tab" id="contact-user" href="#user-form">User</a></li>
+                        <li><a class="form-tab" id="contact-user" href="#user-form">User</a></li>
+                        <li class="form-active"><a class="form-tab" id="contact-business" href="#business-form">Business</a></li>
                         <li><a class="form-tab" id="contact-corporate" href="#corporate-form">Corporate</a></li>
-                        <li><a class="form-tab" id="contact-business" href="#business-form">Business</a></li>
                         <li><a class="form-tab" id="contact-collaborator" href="#collaborator-form">Collaborator</a></li>
                     </ul>
                     <div class="space-50"></div>
@@ -907,18 +911,24 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <div class="form-iframe" id="user-form"> 
+                    <div class="form-iframe" id="user-form" style="display: none;"> 
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxA64nBnlH6Hhav1H6wUuIAc527-gz4fjdpbTwd1VT8421tA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
                 </div>
-                <div class="form-iframe" id="corporate-form" style="display: none;"> 
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI9YLtIRHVdGvvvrLE3ZL6XXu8PAjwRQqkHYjyHIinMKo49A/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="form-iframe" id="corporate-form" style="display: none;"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI9YLtIRHVdGvvvrLE3ZL6XXu8PAjwRQqkHYjyHIinMKo49A/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
                 </div>
-                <div class="form-iframe" id="business-form" style="display: none;"> 
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkx6sjFM6Xj3IEQRjXK0jLT41nXj2tAMyn07T0YRrANysAAQ/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="form-iframe" id="business-form"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkx6sjFM6Xj3IEQRjXK0jLT41nXj2tAMyn07T0YRrANysAAQ/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
                 </div>
-                <div class="form-iframe" id="collaborator-form" style="display: none;"> 
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPQd4rZJtRzf-DHGbDKgJzbCC8ZpnSP3ICUiQj3pg737neow/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="form-iframe" id="collaborator-form" style="display: none;"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPQd4rZJtRzf-DHGbDKgJzbCC8ZpnSP3ICUiQj3pg737neow/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -947,7 +957,7 @@
                     <h4>About</h4>
                     <div class="space-10"></div>
                     <ul class="list">
-                        <li><a href="https://angel.co/company/hoblix" target="_blank" class="footer-about">About Us</a></li>
+                        <li class="footer-about"><a href="https://angel.co/company/hoblix" target="_blank">About Us</a></li>
                         <!-- <li><a href="#">Partners</a></li>
                         <li><a href="#">Career</a></li>
                         <li><a href="#">Reviews</a></li> -->
@@ -1022,7 +1032,7 @@
             $('.header-banner').hide(200)
         })
         $('#partner-btn').on('click', function(event){
-            hash = "#contact-page"
+            hash    = "#contact-page"
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function(){
@@ -1036,12 +1046,12 @@
             if(target!=replace){
                 $( "li" ).removeClass("form-active")
                 $("a[href='" +target+ "']").parent().addClass("form-active")
-                event.preventDefault()
                 $(replace).hide()
                 $(target).show()
             }
         })
-        $('.sub-button').on('click', function(){
+        $('.sub-button').on('click', function(event){
+            event.preventDefault()
             data = $('#mc-form').serializeArray()[0]
             name = data.name
             value = data.value
